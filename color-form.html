@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/color-form.css" type="text/css">
+    <title>Color Builder</title>
+</head>
+<body>
+    <div id="containers">
+        <div id="form-container">
+            <form action="#">
+                <label for="red-slider">Red</label>
+                <input id="red-slider" type="range" min="0" max="255" step="5">
+                <br>
+                <label for="green-slider">Green</label>
+                <input id="green-slider" type="range" min="0" max="255" step="5">
+                <br>       
+                <label for="blue-slider">Blue</label>
+                <input id="blue-slider" type="range" min="0" max="255" step="5">
+                <br>
+                <label for="alpha-slider">Alpha</label>
+                <input id="alpha-slider" type="range" min="0" max="1" step="0.01">                
+            </form>
+        </div>
+        <div id="color-container">
+                 <input id="color-box" type="text">
+        </div>
+    </div>
+</body>
+</html>

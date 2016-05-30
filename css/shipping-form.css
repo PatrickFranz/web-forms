@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+label{
+    font-size: 0.8em;
+}
+
+input{
+    font-size: 1.2em;
+    padding: 10px;
+    margin: 10px;  
+    vertical-align: -2px;
+}
+
+input:focus{
+    background-color: lemonchiffon;
+    border-radius: 5px;
+}
+
+#containers{
+    width: 800px;
+    padding: 20px;
+    margin: 5px;
+    background: lightblue;
+}
+
+#shipping-section{
+    width: 50%;
+    padding: 20px;
+    float: left;
+}
+
+#billing-section{
+    width: 50%;
+    padding: 20px;
+    float: left;
+}
+
+.button {
+    display: inline-block;
+    background-color: #FF8F15;
+    border: none;
+    border-radius: 5px;
+    padding: 0;
+    color: #000;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+}
+
+.invisible{
+    visibility: hidden;
+}
+.center{
+    text-align: center;
+    clear: both;
+}
+
+/*--Button Styling--*/
+.button:hover{ background-color: #FFB96E; }
+.button:active{ background-color: #FFE391; }
+.button:focus{ outline:none; }
+
+.button-md{
+    padding: 10px;  
+    font-size: 1.2em; 
+}
+
+/*--END Button Styling--*/

@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section{
+    width: 100%;
+}
+
+input, select, textarea{
+       
+    padding: 10px;
+    margin: 10px 20px 10px 0px;
+    font-size: 1.2em;   
+}
+
+select{
+    margin-left: 10px;
+}
+
+input[type='radio']{
+    vertical-align: 15px;
+    margin-left: 40px;
+}
+
+textarea:focus, input:focus{
+    background-color: lemonchiffon;
+    border-radius: 5px;
+}
+
+#containers{
+    width: 600px;
+    margin: 10px;
+    border-radius: 5px;
+    background: #D1D5D8;
+}
+
+#header{
+    background-color: #3498DB;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+#main-form, #expiration{
+    margin: 0 20px;
+}
+
+#csv-info{
+    border: 3px solid #3498DB;
+    border-radius: 5px;
+}
+
+a#whats-this:hover + #csv-info{
+    display: block;
+    position: absolute;
+    left: 200px;
+}
+
+#csv-info{
+   display: none;
+}
+
+.fixed-label{
+    display: inline-block;
+    width: 150px;   
+}
+
+.center{
+    text-align: center;
+    clear: both;
+}
+
+/*--Button Styling--*/
+.button {
+    display: inline-block;
+    background-color: #FF8F15;
+    border: none;
+    border-radius: 5px;
+    padding: 0;
+    color: #000;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button:hover{ background-color: #FFB96E; }
+.button:active{ background-color: #FFE391; }
+.button:focus{ outline:none; }
+
+.button-md{
+    padding: 10px;  
+    font-size: 1.2em;
+    width: 200px;
+}
+
+/*--END Button Styling--*/

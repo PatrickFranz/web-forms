@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/scheduling.css" type="text/css">
+    <title>Scheduling Form</title>
+</head>
+<body>
+    <div id="containers">
+        <section id='header' class='center'>
+            <h1>Scheduling Form</h1>
+        </section>
+        <section id='main-form'>
+            <form action="#" method="POST">
+            <label>Date
+                <input name="date-in" type="date" required>
+            </label>
+            <br>
+            <label>Time
+                <input name="time-in" type="time" value="12:00" required>
+            </label>
+            <br>
+            <label>Timezone
+                <select name="timezone-in" value="Timezone">
+                    <option name="pst" id="pst">Pacific</option>
+                    <option name="mst" id="mst">Mountain</option>
+                    <option name="cst" id="cst">Central</option>
+                    <option name="est" id="est">Eastern</option>
+                    <option name="ast" id="ast">Atlantic</option>
+                </select>
+            </label>
+            <br>
+            <label id="msg-label">Message
+                <textarea name="message-in" id="message" ></textarea>
+            </label>
+            <br>
+            <label>Phone Number
+                <input name="phone-in" id="contact-tel" type="tel">
+            </label>
+            <br>
+            <label>Email Address
+                <input name="email-in" id="contact-email" type="email" required>
+            </label>           
+        </section>
+        <section class="center">
+            <input class="button button-md" type="submit">
+        </section>
+        </form>
+        
+    </div>
+</body>
+</html>
