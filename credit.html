@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/credit.css" type="text/css">
+    <link rel="stylesheet" href="css/forms.css" type="text/css">
+    <link rel='stylesheet' href='css/button.css' type='text/css'>
     <title>Credit Card Form</title>
 </head>
 <body>
-    <div id="containers">
-        <section id='header' class='center'>
+    <div id="cc-container">
+        <section id='cc-header' class='center-block-content'>
             <h2>Credit / Debit Card Form</h2>  
         </section>
-        <section id="card-choice" class=>
+        <section id="credit-card-radio" class=>
             <input type="radio" name="cc" value="visa">
             <img src="images/visa.png" alt="VISA">
             <input type="radio" name="cc" value="visa">
@@ -18,7 +19,7 @@
             <input type="radio" name="cc" value="visa">
             <img src="images/amex.png" alt="American Express">
         </section>
-        <section id='main-form'>
+        <section id='cc-main-form'>
             <label class='fixed-label'>Cardholder Name</label>
             <input type="text" name="full-name">
             <br>          
@@ -27,8 +28,8 @@
             <br>
             <label class='fixed-label'>CSV Code</label>
             <input type="text" maxlength="4" size="5px">
-            <span><a id="whats-this" href="images/cc-cvs.png" target="_blank">What is this?</a>
-                <span id="csv-info">
+            <span><a id="cc-whats-this" href="images/cc-cvs.png" target="_blank">What is this?</a>
+                <span id="cc-csv-info">
                     <img src="images/cc-cvs.png"
                         alt="Credit Card Security" >
                 </span>
@@ -37,7 +38,7 @@
         </section>
        
         
-        <section id='expiration'>
+        <section id='cc-expiration'>
             <span class='fixed-label'>Card Expiration</span>
             <label for="exp-month">Month</label>
             <select name="exp-month">
@@ -73,7 +74,7 @@
                 <option value="2030">2030</option>
             </select>
         </section>
-        <section class="center">
+        <section class="center-block-content">
             <input type="submit" value="Submit" class="button button-md">
         </section>
     </div>
