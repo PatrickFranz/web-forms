@@ -1,0 +1,32 @@
+/*HTML SELECTORS*/
+*{
+    box-sizing: border-box;    
+}
+
+body{
+    font-family: 'Raleway', sans-serif;  
+    font-size: 1.3em;
+}
+
+input{
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 10px;
+    margin-bottom: 20px; 
+}
+
+label{    
+    padding: 10px;
+    width: 250px;  
+}
+
+input:focus {
+    
+    background: #FFF5B8;
+    
+}
+
+/*ID SELECTORS */
+
+

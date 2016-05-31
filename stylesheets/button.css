@@ -1,0 +1,27 @@
+.button {
+    display: inline-block;
+    background-color: #FF8F15;
+    border: none;
+    border-radius: 2px;
+    padding: 0;
+    color: #000;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+}
+
+.button:hover{ background-color: #FFB96E; }
+.button:active{ background-color: #FFE391; }
+.button:focus{ outline:none; }
+
+.button-sm{
+    padding: 5px;
+}
+.button-md{
+    padding: 10px;   
+    font-size: 1.2em;
+}
+.button-lg{
+    padding: 15px;
+    font-size: 1.5em;
+}
