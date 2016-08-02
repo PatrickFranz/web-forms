@@ -1,41 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/forms.css" type="text/css">    
-    <link rel="stylesheet" href="css/button.css" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-    <title>Signup</title>
-</head>
+  <head>
+      <meta charset='UTF-8'>
+      <link rel='stylesheet' href='/stylesheets/forms.css' type='text/css'>    
+      <link rel='stylesheet' href='/stylesheets/button.css' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+      <title>Signup</title>
+  </head>
 
-<body>
-    <div id="signup-container" class='width-half'>
-        <form action="#!">
+  <body>
+    <div id='signup-container' class='width-half'>
+      <form action='#!'>
+
+        <label for='fname'>First Name</label> 
+        <input class='wide-text' type='text' id='fname' required>
+        <br>
             
-            <label for="fname">First Name</label> 
-            <input class='wide-text' type="text" id="fname">
-            <br>
+        <label for='lname'>Last Name</label>
+        <input class='wide-text' type='text' id='lname' required>
+        <br>
+        
+        <label for='email'>Email</label>
+        <input class='wide-text' type='email' id='email' required formnovalidate> 
+        <br>
+    
+        <label for='dob'>Birthdate</label>
+        <input class='wide-text' type='date' id='dob' formnovalidate> 
+        <br>
+        
+        <label for='password'>Password</label>
+        <input class='wide-text' type='password' id='password' required>
+        <br>        
             
-            <label for="lname">Last Name</label>
-            <input class='wide-text' type="text" id="lname"> 
-            <br>
-            
-            <label for="email">Email</label>
-            <input class='wide-text' type="email" id="email"> 
-            <br>
-            
-            <label for="dob">Birthdate</label>
-            <input class='wide-text' type="date" id="dob"> 
-            <br>
-            
-            <label for="password">Password</label>
-            <input class='wide-text' type="password" id="password">
-            <br>
-            
-            <input class="button button-md wide-text" type="submit" id="submit" tabindex="-1"/>
-        </form>
+        <input class='button button-md wide-text' type='submit' id='submit' tabindex='-1'/>
+      </form>
     </div>
-</body>
+    <script src='/scripts/validator.js'></script>
+    <script src='/scripts/signup-form.js'></script>
+  </body>
 
 </html>

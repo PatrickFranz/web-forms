@@ -38,13 +38,26 @@ input:hover{
     background-color: #fffbe2;
 }
 
-label{    
-    padding: 10px;
-      
+input:not([type='submit']):invalid:focus{
+    background: url('../images/invalid-30.png')
+                no-repeat;
+    background-position: right;
+    background-color: lightpink;
 }
 
-input:focus {    
-    background-color: #FFF5B8;    
+input:not([type='submit']):valid{
+    background: url('../images/valid-30.png')
+                no-repeat;
+    background-position: right;
+    background-color: lightgreen;
+}
+
+input[type='number']{
+    width: 7rem;
+}
+
+label{    
+    padding: 10px;  
 }
 
 input.shipping-text-input{
@@ -53,7 +66,6 @@ input.shipping-text-input{
     margin: 10px;  
     vertical-align: -2px;
 }
-
 
 /*ID SELECTORS */
 
@@ -108,7 +120,6 @@ input.shipping-text-input{
     float: left;
     width: 150px;
     padding: 50px 0;
-
 }
 
 #shipping-container{
@@ -167,8 +178,14 @@ input.shipping-text-input{
     padding: 20px;
 }
 
-#cc-main-form, #cc-expiration{
+#cc-main-form{
     margin: 0 20px;
+
+}
+
+#cc-expiration{
+     margin: 0 20px;
+   
 }
 
 #cc-csv-info{
@@ -177,13 +194,16 @@ input.shipping-text-input{
     border-radius: 5px;
 }
 
-a#cc-whats-this:hover + #cc-csv-info{
+#cc-whats-this:hover + #cc-csv-info{
     display: block;
     position: absolute;
-    right: 200px;
-    top: 20px;
+    left: 32rem;
+    
 }
 
+#alpha-num{
+    width: 7rem;
+}
 
 /*CLASS SELECTORS*/
 

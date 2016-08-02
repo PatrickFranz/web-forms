@@ -25,63 +25,320 @@
 
     <section class="main-content">
         <h1>
-<a id="project-4" class="anchor" href="#project-4" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Project 4</h1>
+            <a id="project-4" class="anchor" href="#project-4" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Project
+            4
+        </h1>
 
         <h2>
-<a id="web-forms" class="anchor" href="#web-forms" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Web Forms</h2>
+            <a id="web-forms" class="anchor" href="#web-forms" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Web
+            Forms
+        </h2>
 
 
-        <h3>Signup Form</h3>
+        <h3><a href="/forms/signup-form.html" target='_blank'>Signup Form</a></h3>
         <div class='form'>
-            <div w3-include-html="forms/signup-form.html">
+            <div id='signup-container' class='width-half'>
+                <form action='#!'>
+
+                    <label for='fname'>First Name</label>
+                    <input class='wide-text' type='text' id='fname' required>
+                    <br>
+
+                    <label for='lname'>Last Name</label>
+                    <input class='wide-text' type='text' id='lname' required>
+                    <br>
+
+                    <label for='email'>Email</label>
+                    <input class='wide-text' type='email' id='email' required formnovalidate>
+                    <br>
+
+                    <label for='dob'>Birthdate</label>
+                    <input class='wide-text' type='date' id='dob' formnovalidate>
+                    <br>
+
+                    <label for='password'>Password</label>
+                    <input class='wide-text' type='password' id='password' required>
+                    <br>
+
+                    <input class='button button-md wide-text' type='submit' id='submit' tabindex='-1' />
+                </form>
+            </div>
+
+            <h3><a href='/forms/search.html' target='_blank'>Search Form</a></h3>
+            <h1 class="center-block-content">Search</h1>
+            <form action="#">
+                <input class='wide-text' id='search-form-text-input' type="text">
+                <select class="button button-md" id="search-form-category">
+                    <option value="java">Java</option>
+                    <option value="c">C</option>
+                    <option value="cpp">C++</option>
+                    <option value="python">Python</option>
+                    <option value="php">PHP</option>
+                    <option value="js">Javascript</option>
+                </select>
+                <div class="center-block-content">
+                    <button class="button button-md search">
+                <img src="/images/search-25.png"            alt="search">
+                Search
+            </button>
+                </div>
+            </form>
+
+            <h3><a href="/forms/questionnaire.html" target='_blank'>Questionnaire</a></h3>
+            <div class='form'>
+                <div class='width-half'>
+                    <form action="#!" name='q-pet'>
+                        <label class="q-label" for="pet">
+                            Favorite Pet:</label>
+                        <br>
+                        <input type="radio" name="pet" value="cat" checked>Cat
+                        <br>
+                        <input type="radio" name="pet" value="dog">Dog
+                        <br>
+                        <input type="radio" name="pet" value="iguana">Iguana
+                        <br>
+                        <input type="radio" name="pet" value="bird">Bird
+                        <br>
+                        <input id="radio-other" type="radio" name="pet" value="other">Other
+                        <input type="text" name="pet" id="text-other" class="width-half">
+                        <br>
+                        <br>
+                        <div class='center-block-content'>
+                            <input type="submit" class='button button-md' value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <h3><a href="/forms/login.html" target='_blank'>Login Form</a></h3>
+            <div class='form'>
+                <div id="login-container" class='width-half'>
+                    <div id="login-title" class="center-block-content">WELCOME</div>
+                    <div class="center-block-content">
+                        <form action="#" name="login">
+                            <input class="wide-80-text width80" type="text" id="uname" placeholder="Username"><br>
+                            <input class="wide-80-text" type="password" id="pword" placeholder="Password"><br>
+
+                            <input id='login-checkbox' type="checkbox" name="remember"><label for="remember">Remember my username?</label>
+
+                            <div class="center">
+                                <button class="button button-md">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <h3><a href='/forms/color-form.html' target='_blank'>Color Building Form</a></h3>
+            <div class='form'>
+                <div id="color-container">
+                    <div id="form-container">
+                        <label class='color-slide-label' for="red-slider">Red</label>
+                        <input id="red-slider" type="range" min="0" max="255" step="5">
+                        <input id='red-num' type="number" min="0" max="255">
+                        <br>
+
+                        <label class='color-slide-label' for="green-slider">Green</label>
+                        <input id="green-slider" type="range" min="0" max="255" step="5">
+                        <input id='green-num' type="number" min="0" max="255">
+                        <br>
+
+                        <label class='color-slide-label' for="blue-slider">Blue</label>
+                        <input id="blue-slider" type="range" min="0" max="255" step="5">
+                        <input id='blue-num' type="number" min="0" max="255">
+                        <br>
+
+                        <label class='color-slide-label' for="alpha-slider">Alpha</label>
+                        <input id="alpha-slider" type="range" min="0" max="1" step="0.1">
+                        <input id='alpha-num' type="text">
+                    </div>
+
+                    <div id="color-display-div">
+                        <input id="color-textbox" type="text" disabled>
+                    </div>
+                </div>
 
             </div>
-        </div>
-        <h3>Search Form</h3>
-        <div class='form'>
-            <div w3-include-html="forms/search.html"></div>            
-        </div>
 
-        <h3>Questionnaire</h3>
-        <div class='form'>
-            <div w3-include-html="forms/questionnaire.html"></div>            
-        </div>
+            <h3><a href="/forms/shipping-form.html" target='_blank'>Shipping and Billing Address Form</a></h3>
+            <div class='form'>
+                <form action="#">
+                    <div id="shipping-container">
+                        <section id="header">
+                            <h1>Shipping and Billing Information</h1>
+                        </section>
+                        <section id="shipping-section">
+                            <h3>Shipping</h3>
+                            <input class="invisible" type="checkbox">
+                            <br>
+                            <input class='shipping-text-input' id="ship-fname" type="text" placeholder="First Name" required>
+                            <br>
+                            <input class='shipping-text-input' id="ship-lname" type="text" placeholder="Last Name" required>
+                            <br>
+                            <input class='shipping-text-input' id="ship-address" type="text" placeholder="Shipping Address" required>
+                            <br>
+                            <input class='shipping-text-input' id="ship-city" type="text" placeholder="City" required>
+                            <br>
+                            <input class='shipping-text-input' id="ship-country" type="text" placeholder="Country" required>
+                        </section>
+                        <section id="billing-section">
+                            <h3>Billing</h3>
+                            <label class='small-text' for="same-as"><input id="same-as" type="checkbox">Same as Shipping</label>
+                            <br>
+                            <input class='shipping-text-input' id="bill-fname" type="text" placeholder="First Name" required>
+                            <br>
+                            <input class='shipping-text-input' id="bill-lname"" type="text" placeholder="Last Name" required>
+                            <br>
+                            <input class='shipping-text-input' id="bill-address" type="text" placeholder="Shipping Address" required>
+                            <br>
+                            <input class='shipping-text-input' id="bill-city" type="text" placeholder="City" required>
+                            <br>
+                            <input class='shipping-text-input' id="bill-country" type="text" placeholder="Country" required>
+                        </section>
+                        <section class="center-block-content">
+                            <input class='button button-md' id='reset' type='reset' value="Reset">
+                            <input class="button button-md" id="submit" type="submit" value="Place Order">
+                        </section>
+                    </div>
+                </form>
+            </div>
+            <h3><a href="/forms/scheduling.html" target='_blank'>Scheduling Form</a></h3>
+            <div id="schedule-container">
+                <section id='header' class='center-block-content'>
+                    <h1>Scheduling Form</h1>
+                </section>
+                <form action="#" method="POST">
+                    <section id='main-form'>
+                        <label>Date
+                            <input id="date-in" type="date" required>
+                        </label>
+                        <br>
+                        <label>Time
+                            <input id="time-in" type="time" value="12:00" required>
+                        </label>
+                        <br>
+                        <label>Timezone
+                            <select id="timezone-in" value="Timezone">
+                                <option name="pst" id="pst">Pacific</option>
+                                <option name="mst" id="mst">Mountain</option>
+                                <option name="cst" id="cst">Central</option>
+                                <option name="est" id="est">Eastern</option>
+                                <option name="ast" id="ast">Atlantic</option>
+                            </select>
+                        </label>
+                        <br>
+                        <label id="msg-label">Message
+                            <textarea name="message-in" id="message" ></textarea>
+                        </label>
+                        <br>
+                        <label>Phone Number
+                            <input name="phone-in" id="contact-tel" type="tel" required>
+                        </label>
+                        <br>
+                        <label>Email Address
+                            <input name="email-in" id="contact-email" type="email" required>
+                        </label>
+                </section>
+                <section class="center-block-content">
+                    <input class="button button-md" type="submit">
+                </section>
+                </form>
 
-        <h3>Login Form</h3>
-        <div class='form'>
-            <div w3-include-html="forms/login.html"></div>            
-        </div>
+            </div>
 
-        <h3>Color Building Form</h3>
-        <div class='form'>
-            <div w3-include-html="forms/color-form.html"></div>            
-        </div>
+            <h3><a href="/forms/credit.html" target='_blank'>Credit / Debit Card Form</a></h3>
+            <div class='form'>
+                <div id="cc-container">
+        <section id='cc-header' class='center-block-content'>
+            <h2>Credit / Debit Card Form</h2>  
+        </section>
+        <form action="#!">
+            <section id="credit-card-radio" class=>
+                <input type="radio" name="cc" value="visa">
+                <img src="/images/visa.png" alt="VISA">
+                <input type="radio" name="cc" value="visa">
+                <img src="/images/mc.png" alt="Mastercard">
+                <input type="radio" name="cc" value="visa">
+                <img src="/images/amex.png" alt="American Express">
+            </section>
+            <section id='cc-main-form'>
+                <label class='fixed-label'>Cardholder Name</label>
+                <input id='cust-name' type="text" name="full-name">
+                <br>          
+                <label class='fixed-label'>Card Number</label>
+                <input id='cc-number' type="text" minlength="16" maxlength="19">
+                <br>
+                <label class='fixed-label'>CSV Code</label>
+                <input id='csv-code' type="text" maxlength="4" size="5px">
+                <span><a id="cc-whats-this" href="/images/cc-cvs.png" target="_blank">What is this?</a>
+                    <span id="cc-csv-info">
+                        <img src="/images/cc-cvs.png"
+                            alt="Credit Card Security" >
+                    </span>
+                </span>
+                <br>
+            </section>           
+            <section id='cc-expiration'>
+                <span class='fixed-label'>Card Expiration</span>
+                <label for="exp-month">Month</label>
+                <select id='exp-month' name="exp-month">
+                    <option value="1">1</option>`
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <label for="exp-year">Year</label>
+                <select id='exp-year' name="exp-year">
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                </select>
+            </section>
+            <section class="center-block-content">
+                <input type="submit" value="Submit" class="button button-md">
+            </section>
+        </form>
+    </div>
+            </div>
 
-        <h3>Shipping and Billing Address Form</h3>
-        <div class='form'>
-            <div w3-include-html="forms/shipping-form.html"></div>            
-        </div>
+            <footer class="site-footer">
+                <span class="site-footer-owner"><a href="https://github.com/PatrickFranz/web-forms">Web-forms</a> is maintained by <a href="https://patrickfranz.github.io/">PatrickFranz</a>.</span>
 
-        <h3>Scheduling Form</h3>
-        <div class='form'>
-            <div w3-include-html="forms/scheduling.html"></div>            
-        </div>
-
-        <h3>Credit / Debit Card Form</h3>
-        <div class='form'>
-            <div w3-include-html="forms/credit.html"></div>            
-        </div>
-
-        <footer class="site-footer">
-            <span class="site-footer-owner"><a href="https://github.com/PatrickFranz/web-forms">Web-forms</a> is maintained by <a href="https://patrickfranz.github.io/">PatrickFranz</a>.</span>
-
-            <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-        </footer>
+                <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+            </footer>
 
     </section>
-    <script>
-        w3IncludeHTML();
-    </script>
+    <script src='/scripts/validator.js'></script>
+    <script src='/scripts/search.js'></script>
+    <script src='/scripts/signup-form.js'></script>
+    <script src='/scripts/color-form.js'></script>
+    <script src='/scripts/questionnaire.js'></script>
+    <script src='/scripts/login.js'></script>
+    <script src='/scripts/shipping.js'></script>
+    <script src='/scripts/scheduling.js'></script>
+    <script src='/scripts/credit.js'></script>
+
+    <script>w3IncludeHTML();</script>
 
 </body>
 

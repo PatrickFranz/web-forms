@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/forms.css" type="text/css">
-    <link rel="stylesheet" href="css/button.css" type="text/css">
+    <link rel="stylesheet" href="/stylesheets/forms.css" type="text/css">
+    <link rel="stylesheet" href="/stylesheets/button.css" type="text/css">
     <title>Login</title>
 </head>
 <body>
@@ -11,8 +11,8 @@
         <div id="login-title" class="center-block-content">WELCOME</div>
         <div class="center-block-content">
             <form action="#" name="login">
-                <input class="wide-80-text width80" type="text" name="uname" placeholder="Username"><br>
-                <input class="wide-80-text" type="password" name="pword" placeholder="Password"><br>
+                <input class="wide-80-text width80" type="text" id="uname" placeholder="Username"><br>
+                <input class="wide-80-text" type="password" id="pword" placeholder="Password"><br>
                 
                 <input id='login-checkbox' type="checkbox" name="remember"><label for="remember">Remember my username?</label>
             
@@ -23,5 +23,7 @@
         </div>
         
     </div>
+    <script src='/scripts/validator.js'></script>
+    <script src='/scripts/login.js'></script>
 </body>
 </html>
