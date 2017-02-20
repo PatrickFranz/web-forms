@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../stylesheets/button.css" type="text/css">
+    <link rel="stylesheet" href="../stylesheets/forms.css" type="text/css">
+    <title>Questionnaire</title>
+</head>
+<body>
+    <div id='questionaire-contain'>
+        <h1 class="center-block-content">Questionnaire</h1>
+        <div>
+            <form action="#!" name='q-pet'>
+                <label class="q-label" for="pet">
+                    Favorite Pet:</label>
+                <br>
+                <input type="radio" name="pet" value="cat" checked>Cat
+                <br>
+                <input type="radio" name="pet" value="dog">Dog
+                <br>
+                <input type="radio" name="pet" value="iguana">Iguana
+                <br>
+                <input type="radio" name="pet" value="bird">Bird
+                <br>
+                <input id="radio-other" type="radio" name="pet" value="other">Other
+                <input type="text" name="pet" id="text-other" class="width-half">
+                <br>
+                <br>
+                <div class='center-block-content'>
+                    <input type="submit" class='button button-md' value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+     <script src='../scripts/validator.js'></script>
+  <script src='../scripts/questionnaire.js'></script>
+</body>
+</html>

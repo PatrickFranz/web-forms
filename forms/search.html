@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../stylesheets/button.css" type="text/css">
+    <link rel="stylesheet" href="../stylesheets/forms.css">
+    <title>Search</title>
+</head>
+<body>
+    <div id="search-contain">
+        <h1 class="center-block-content">Search</h1>
+        <form action="#">
+            <input class='wide-text' id='search-form-text-input' type="text">
+            <select class="button button-md" id="search-form-category">
+                <option value="java">Java</option>
+                <option value="c">C</option>
+                <option value="cpp">C++</option>
+                <option value="python">Python</option>
+                <option value="php">PHP</option>
+                <option value="js">Javascript</option>
+            </select>
+            <div class="center-block-content">
+                <button class="button button-md search">
+                    <img src="../images/search-25.png"            alt="search">
+                    Search
+                </button>
+            </div>
+        </form>
+    </div>    
+    <script src='../scripts/validator.js'></script>
+    <script src='../scripts/search.js'></script>
+</body>
+</html>

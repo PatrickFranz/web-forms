@@ -1,0 +1,456 @@
+/*HTML SELECTORS*/
+*{
+    box-sizing: border-box;    
+}
+
+body{
+    font-family: 'Raleway', sans-serif;  
+    font-size: 1.3em;
+}
+
+h1, h2, h3{
+    color: #494949;
+}
+input{
+    border-radius: 5px;
+    font-size: 1em;
+    
+}
+
+input.wide-text{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+input.wide-80-text{
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+input[type="radio"]{
+    width: 30px;
+    margin-top: 15px;
+}
+
+input:hover{
+    background-color: #fffbe2;
+}
+
+input:not([type='submit']):invalid:focus{
+    background: url('../images/invalid-30.png')
+                no-repeat;
+    background-size: contain; 
+    background-position: right;
+    background-color: lightpink;
+    
+}
+
+input:not([type='submit']):valid{
+    background: url('../images/valid-30.png')
+                no-repeat;
+    background-size: contain;    
+    background-position: right;
+    background-color: lightgreen;
+}
+
+input[type='number']{
+    width: 7rem;
+}
+
+label{    
+    padding: 10px;  
+}
+
+input.shipping-text-input{
+    font-size: 1.2em;
+    padding: 10px;
+    margin: 10px;  
+    vertical-align: -2px;
+}
+
+/*ID SELECTORS */
+
+#search-contain{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#search-form-text-input{
+    width: 70%;
+}
+
+#search-form-category{
+    width: 20%;
+}
+
+#schedule-container input, #schedule-container select,#schedule-container textarea{
+    width: 100%;    
+    padding: 10px;
+    margin: 10px; 
+    font-size: 1.2em;
+}
+
+#login-container{
+    padding: 0px 0px 30px;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 5px;
+    background: #03A9F4; 
+}
+
+#login-title{
+    background-color: #B3E5FC;
+    border-radius: 5px 5px 0 0;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#login-checkbox{
+    margin: 10px 0 30px;
+    padding: 0;
+    width: 20px;
+}
+
+#login-checkbox + label{
+    font-size: 0.75rem;
+}
+
+#color-container{    
+    display: flex; 
+    flex-direction: column;
+    text-align: center;
+    width: 50%;   
+    margin: 0 auto;
+    background: lightblue;
+}
+
+#color-display-div{   
+   padding: 20px;
+   margin: 0 auto;
+
+}
+
+#color-textbox{
+    float: left;
+    width: 150px;
+    padding: 50px 0;
+}
+
+#shipping-container{
+    width: 75%;
+    margin: 0 auto;
+    padding: 20px;
+    background: lightblue;  
+}
+
+#shipping-section{
+    width: 50%;
+    padding: 20px;
+    float: left;
+}
+
+#billing-section{
+    width: 50%;
+    padding: 20px;
+    float: left;
+}
+
+#schedule-container{
+    width: 50%;
+    margin: 0 auto;
+    padding: 2rem 4rem;
+    background: lightblue;
+}
+
+#credit-card-radio{
+    text-align: center;
+}
+
+#credit-card-radio > input[type='radio']{
+    display: none;
+}
+
+#credit-card-radio > input[type='radio'] img{
+    padding-bottom: 5px;
+}
+
+#credit-card-radio > input[type='radio']:checked + label > img{
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(135,211,124,1);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(135,211,124,1);
+    box-shadow: 0px 0px 5px 5px rgba(135,211,124,1);
+}
+
+#cc-container{
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 5px;
+    background: #D1D5D8;
+}
+
+#cc-container input,
+#cc-container  select, 
+#cc-container textarea{       
+    padding: 10px;
+    margin: 10px 20px 10px 0px;
+    font-size: 1.2em; 
+}
+
+#cc-header{
+    background-color: #3498DB;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+#cc-main-form{
+    margin: 0 20px;
+}
+
+#cc-expiration{
+     margin: 0 20px;
+}
+
+#cc-csv-info{
+    display: none;
+    border: 3px solid #3498DB;
+    border-radius: 5px;
+}
+
+#cc-whats-this{
+    font-size: 0.75rem;
+}
+
+#cc-whats-this:hover + #cc-csv-info{
+    display: block;
+    position: absolute;
+    left: 32rem;  
+}
+
+#questionaire-contain{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#signup-container{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#alpha-num{
+    width: 7rem;
+}
+
+/*CLASS SELECTORS*/
+
+.width-half{
+    width: 50%;
+}
+
+.width80{
+    width: 80%;
+}
+
+.center-block-content{
+    text-align: center;
+    clear: both;
+}
+
+.float-right{
+    float: right;    
+}
+
+.float-left{
+    float: left;
+}
+
+.color-slide-label{
+    display: inline-block;
+    width: 100px;
+}
+
+.fixed-label{
+    display: inline-block;
+    width: 150px;   
+}
+
+.invisible{
+    visibility: hidden;
+}
+
+.small-text{
+    font-size: 0.8em;
+}
+
+@media (max-width: 1024px){
+    /*CREDIT CARD FORM*/
+    #cc-container{
+        width: 70%;
+    }
+
+    #cc-container input,
+    #cc-container  select, 
+    #cc-container textarea{       
+        padding: 10px;
+        margin: 10px 0px 10px 0px;
+        font-size: 1rem; 
+    }
+
+    #cc-csv-info{
+        display: none;
+        border: 3px solid #3498DB;
+        border-radius: 5px;
+    }
+
+    #cc-whats-this:hover + #cc-csv-info{
+        display: none;
+        position: initial;
+        left: 0;  
+    }
+
+    /*SCHEDULING FORM*/
+    #schedule-container{
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px){
+    /*CREDIT CARD FORM*/
+    #cc-container{
+        width: 80%;
+        font-size: 0.9rem;
+    }
+
+    #cc-container input,
+    #cc-container  select, 
+    #cc-container textarea{       
+        padding: 15px;
+        margin: 10px 0px 10px 0px;
+        font-size: 1rem; 
+    }
+
+    #cc-whats-this{
+        display: block;
+    }
+
+    #cc-main-form{
+        margin: 0 10px;
+    }
+
+    
+    /*COLOR PICKER FORM*/
+    #color-container{    
+        width: 100%;   
+    }
+
+    /*LOGIN FORM*/
+    #login-container{
+        width: 80%;
+    }
+
+    /*QUESTIONAIRE FORM*/
+    #questionaire-contain{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /*SEARCH FORM*/
+    #search-contain{
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    /*SHIPPING FORM*/
+    #shipping-container{
+        width: 100%;
+        text-align: center;
+    }
+
+    #shipping-section{
+        width: 100%;
+        padding: 20px;
+        float: none;
+    }
+
+    #billing-section{
+        width: 100%;
+        padding: 20px;
+        float: none;
+    }
+}
+
+@media (max-width: 425px){
+
+    /*CREDIT CARD FORM*/
+    #cc-container{
+        width: 100%;
+        text-align: center;
+    }
+
+    #cc-container input,
+    #cc-container  select, 
+    #cc-container textarea{       
+        padding: 15px;
+        margin: 10px 0px 10px 0px;
+        font-size: 1.25rem; 
+    }
+
+    .fixed-label{
+        display: inline-block;
+        font-size: 1.25rem;
+        white-space: nowrap;  
+    }
+
+    /*COLOR PICKER FORM*/
+    #color-container{    
+        font-size: 1.25rem;   
+    }
+
+    #color-container #form-container label{
+        width: 100%;
+    }
+
+    #color-container #form-container input[type="range"]{
+        width: 80%;
+    }
+
+    /*LOGIN FORM*/
+    #login-container{
+        width: 100%;
+    }
+
+    /*QUESTIONAIRE FORM*/
+    #questionaire-contain{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /*SCHEDULING FORM*/
+    #schedule-container{
+        width: 100%;
+    }
+
+    /*SEARCH FORM*/
+    #search-contain{
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    #search-form-text-input{
+        width: 50%;
+    }
+
+    #search-form-category{
+        width: 30%;
+    }
+
+    /*SIGNUP FORM*/
+    #signup-container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+}

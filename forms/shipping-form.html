@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../stylesheets/forms.css" type="text/css">
+    <link rel="stylesheet" href="../stylesheets/button.css" type="text/css">
+    <title>Shipping Forms</title>
+</head> 
+<body>
+    <form action="#">
+        <div id="shipping-container">
+            <section id="header">
+                <h1>Shipping and Billing Information</h1>
+            </section>
+            <section id="shipping-section">
+                <h3>Shipping</h3>
+                <input class="invisible" type="checkbox">
+                <br>
+                <input class='shipping-text-input' id="ship-fname" type="text" placeholder="First Name" required>
+                <br>
+                <input class='shipping-text-input' id="ship-lname" type="text" placeholder="Last Name" required>
+                <br>
+                <input class='shipping-text-input' id="ship-address" type="text" placeholder="Shipping Address" required>
+                <br>
+                <input class='shipping-text-input' id="ship-city" type="text" placeholder="City" required>
+                <br>
+                <input class='shipping-text-input' id="ship-country" type="text" placeholder="Country" required>
+            </section>
+            <section id="billing-section">
+                <h3>Billing</h3>
+                <label class='small-text' for="same-as"><input id="same-as" type="checkbox">Same as Shipping</label>
+                <br>
+                <input class='shipping-text-input' id="bill-fname" type="text" placeholder="First Name" required>
+                <br>
+                <input class='shipping-text-input' id="bill-lname"" type="text" placeholder="Last Name" required>
+                <br>
+                <input class='shipping-text-input' id="bill-address" type="text" placeholder="Shipping Address" required>
+                <br>
+                <input class='shipping-text-input' id="bill-city" type="text" placeholder="City" required>
+                <br>
+                <input class='shipping-text-input' id="bill-country" type="text" placeholder="Country" required>
+            </section>
+            <section class="center-block-content">
+                <input class='button button-md' id='reset' type='reset' value="Reset">
+                <input class="button button-md" id="submit" type="submit" value="Place Order">
+            </section>
+        </div>
+     </form>
+     <script src='../scripts/validator.js'></script>
+     <script src='../scripts/shipping.js'></script>
+</body>
+</html>
