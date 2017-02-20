@@ -41,13 +41,16 @@ input:hover{
 input:not([type='submit']):invalid:focus{
     background: url('../images/invalid-30.png')
                 no-repeat;
+    background-size: contain; 
     background-position: right;
     background-color: lightpink;
+    
 }
 
 input:not([type='submit']):valid{
     background: url('../images/valid-30.png')
                 no-repeat;
+    background-size: contain;    
     background-position: right;
     background-color: lightgreen;
 }
@@ -69,8 +72,13 @@ input.shipping-text-input{
 
 /*ID SELECTORS */
 
+#search-contain{
+    width: 80%;
+    margin: 0 auto;
+}
+
 #search-form-text-input{
-    width: 79%;
+    width: 70%;
 }
 
 #search-form-category{
@@ -82,15 +90,14 @@ input.shipping-text-input{
     padding: 10px;
     margin: 10px; 
     font-size: 1.2em;
-    
 }
 
 #login-container{
     padding: 0px 0px 30px;
     width: 40%;
+    margin: 0 auto;
     border-radius: 5px;
-    background: #03A9F4;
-    
+    background: #03A9F4; 
 }
 
 #login-title{
@@ -102,18 +109,28 @@ input.shipping-text-input{
 }
 
 #login-checkbox{
-    margin: 10px 0 20px;
+    margin: 10px 0 30px;
     padding: 0;
     width: 20px;
 }
 
+#login-checkbox + label{
+    font-size: 0.75rem;
+}
+
 #color-container{    
-    display: inline-flex;    
+    display: flex; 
+    flex-direction: column;
+    text-align: center;
+    width: 50%;   
+    margin: 0 auto;
     background: lightblue;
 }
 
 #color-display-div{   
    padding: 20px;
+   margin: 0 auto;
+
 }
 
 #color-textbox{
@@ -123,11 +140,10 @@ input.shipping-text-input{
 }
 
 #shipping-container{
-    width: 800px;
+    width: 75%;
+    margin: 0 auto;
     padding: 20px;
-    margin: 5px;
-    background: lightblue;
-    
+    background: lightblue;  
 }
 
 #shipping-section{
@@ -143,21 +159,33 @@ input.shipping-text-input{
 }
 
 #schedule-container{
-    width: 600px;
-    padding: 20px;
-    margin: 5px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 2rem 4rem;
     background: lightblue;
 }
 
+#credit-card-radio{
+    text-align: center;
+}
+
 #credit-card-radio > input[type='radio']{
-    vertical-align: 15px;
-    margin-left: 40px; 
-    
+    display: none;
+}
+
+#credit-card-radio > input[type='radio'] img{
+    padding-bottom: 5px;
+}
+
+#credit-card-radio > input[type='radio']:checked + label > img{
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(135,211,124,1);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(135,211,124,1);
+    box-shadow: 0px 0px 5px 5px rgba(135,211,124,1);
 }
 
 #cc-container{
-    width: 600px;
-    margin: 10px;
+    width: 50%;
+    margin: 0 auto;
     border-radius: 5px;
     background: #D1D5D8;
 }
@@ -180,12 +208,10 @@ input.shipping-text-input{
 
 #cc-main-form{
     margin: 0 20px;
-
 }
 
 #cc-expiration{
      margin: 0 20px;
-   
 }
 
 #cc-csv-info{
@@ -194,11 +220,24 @@ input.shipping-text-input{
     border-radius: 5px;
 }
 
+#cc-whats-this{
+    font-size: 0.75rem;
+}
+
 #cc-whats-this:hover + #cc-csv-info{
     display: block;
     position: absolute;
-    left: 32rem;
-    
+    left: 32rem;  
+}
+
+#questionaire-contain{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#signup-container{
+    width: 50%;
+    margin: 0 auto;
 }
 
 #alpha-num{
@@ -214,6 +253,7 @@ input.shipping-text-input{
 .width80{
     width: 80%;
 }
+
 .center-block-content{
     text-align: center;
     clear: both;
@@ -243,4 +283,174 @@ input.shipping-text-input{
 
 .small-text{
     font-size: 0.8em;
+}
+
+@media (max-width: 1024px){
+    /*CREDIT CARD FORM*/
+    #cc-container{
+        width: 70%;
+    }
+
+    #cc-container input,
+    #cc-container  select, 
+    #cc-container textarea{       
+        padding: 10px;
+        margin: 10px 0px 10px 0px;
+        font-size: 1rem; 
+    }
+
+    #cc-csv-info{
+        display: none;
+        border: 3px solid #3498DB;
+        border-radius: 5px;
+    }
+
+    #cc-whats-this:hover + #cc-csv-info{
+        display: none;
+        position: initial;
+        left: 0;  
+    }
+
+    /*SCHEDULING FORM*/
+    #schedule-container{
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px){
+    /*CREDIT CARD FORM*/
+    #cc-container{
+        width: 80%;
+        font-size: 0.9rem;
+    }
+
+    #cc-container input,
+    #cc-container  select, 
+    #cc-container textarea{       
+        padding: 15px;
+        margin: 10px 0px 10px 0px;
+        font-size: 1rem; 
+    }
+
+    #cc-whats-this{
+        display: block;
+    }
+
+    #cc-main-form{
+        margin: 0 10px;
+    }
+
+    
+    /*COLOR PICKER FORM*/
+    #color-container{    
+        width: 100%;   
+    }
+
+    /*LOGIN FORM*/
+    #login-container{
+        width: 80%;
+    }
+
+    /*QUESTIONAIRE FORM*/
+    #questionaire-contain{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /*SEARCH FORM*/
+    #search-contain{
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    /*SHIPPING FORM*/
+    #shipping-container{
+        width: 100%;
+        text-align: center;
+    }
+
+    #shipping-section{
+        width: 100%;
+        padding: 20px;
+        float: none;
+    }
+
+    #billing-section{
+        width: 100%;
+        padding: 20px;
+        float: none;
+    }
+}
+
+@media (max-width: 425px){
+
+    /*CREDIT CARD FORM*/
+    #cc-container{
+        width: 100%;
+        text-align: center;
+    }
+
+    #cc-container input,
+    #cc-container  select, 
+    #cc-container textarea{       
+        padding: 15px;
+        margin: 10px 0px 10px 0px;
+        font-size: 1.25rem; 
+    }
+
+    .fixed-label{
+        display: inline-block;
+        font-size: 1.25rem;
+        white-space: nowrap;  
+    }
+
+    /*COLOR PICKER FORM*/
+    #color-container{    
+        font-size: 1.25rem;   
+    }
+
+    #color-container #form-container label{
+        width: 100%;
+    }
+
+    #color-container #form-container input[type="range"]{
+        width: 80%;
+    }
+
+    /*LOGIN FORM*/
+    #login-container{
+        width: 100%;
+    }
+
+    /*QUESTIONAIRE FORM*/
+    #questionaire-contain{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /*SCHEDULING FORM*/
+    #schedule-container{
+        width: 100%;
+    }
+
+    /*SEARCH FORM*/
+    #search-contain{
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    #search-form-text-input{
+        width: 50%;
+    }
+
+    #search-form-category{
+        width: 30%;
+    }
+
+    /*SIGNUP FORM*/
+    #signup-container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    
 }

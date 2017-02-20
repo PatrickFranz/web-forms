@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/stylesheets/forms.css" type="text/css">
-    <link rel="stylesheet" href="/stylesheets/button.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../stylesheets/forms.css" type="text/css">
+    <link rel="stylesheet" href="../stylesheets/button.css" type="text/css">
     <title>Login</title>
 </head>
 <body>
@@ -14,15 +15,16 @@
                 <input class="wide-80-text width80" type="text" id="uname" placeholder="Username"><br>
                 <input class="wide-80-text" type="password" id="pword" placeholder="Password"><br>
                 
-                <input id='login-checkbox' type="checkbox" name="remember"><label for="remember">Remember my username?</label>
+                <input id='login-checkbox' type="checkbox">
+                <label for="login-checkbox">Remember my username?</label>
             
                 <div class="center">
                     <button class="button button-md">Login</button>
                 </div>
             </form>
         </div>
-        
     </div>
+    
     <script src='/scripts/validator.js'></script>
     <script src='/scripts/login.js'></script>
 </body>
